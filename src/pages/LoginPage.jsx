@@ -22,13 +22,17 @@ export function LoginPage({ setPage, setUser }) {
 
   return (
     <div className="min-h-screen bg-[#23262c] flex flex-row items-center justify-center px-4">
-      <div className="flex w-full max-w-4xl bg-[#181A1E] border border-gray-600 rounded-md overflow-hidden">
-        <div className="hidden md:block w-1/2">
-        <img
-          src={gymBg}
-          alt="Logo ADS"
-          className="w-full h-full object-cover"
-        />
+      <div className="flex w-full max-w-4xl h-full bg-[#181A1E] border border-gray-600 rounded-md overflow-hidden">
+        <div className="hidden md:block w-1/2 relative">
+          <img
+            src={gymBg}
+            alt="Logo ADS"
+            className="w-full h-full object-cover opacity-70"
+          />
+          <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+            <h1 className="text-white text-4xl font-black uppercase italic leading-tight">Transforme seu <span className="text-red-600">Corpo</span></h1>
+            <p className="text-gray-300 mt-2 font-medium">Acompanhe sua evolução e alcance seus objetivos.</p>
+          </div>
         </div>
         <div className="w-full md:w-1/2 p-8">
         <h2 className="text-white text-2xl font-semibold text-center mb-6 uppercase tracking-wider">
