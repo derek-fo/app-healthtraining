@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import gymBg from "../assets/gym.jpg";
 
 export function LoginPage({ setPage, setUser }) {
   const [email, setEmail] = useState("");
@@ -20,10 +21,18 @@ export function LoginPage({ setPage, setUser }) {
   }
 
   return (
-    <div className="min-h-screen bg-[#181A1E] flex flex-col items-center justify-center px-4">
-      <div className="w-full max-w-sm bg-gray-900 p-6 rounded-md border border-gray-800">
+    <div className="min-h-screen bg-[#23262c] flex flex-row items-center justify-center px-4">
+      <div className="flex w-full max-w-4xl bg-[#181A1E] border border-gray-600 rounded-md overflow-hidden">
+        <div className="hidden md:block w-1/2">
+        <img
+          src={gymBg}
+          alt="Logo ADS"
+          className="w-full h-full object-cover"
+        />
+        </div>
+        <div className="w-full md:w-1/2 p-8">
         <h2 className="text-white text-2xl font-semibold text-center mb-6 uppercase tracking-wider">
-          ADS
+          Login
         </h2>
 
         <form onSubmit={handleLogin} className="space-y-4 ">
@@ -90,6 +99,7 @@ export function LoginPage({ setPage, setUser }) {
             Entre com sua conta Strava
           </button>
         </div>
+      </div>
       </div>
     </div>
   );
