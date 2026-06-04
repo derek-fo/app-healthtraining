@@ -123,7 +123,7 @@ function PainelRegistro({ setUser, onGoToLogin }) {
         Cadastre-se
       </h2>
 
-      <form onSubmit={handleCadastro} className="space-y-0.75">
+      <form onSubmit={handleCadastro} className="space-y-1">
         <div>
           <label className="text-gray-400 text-sm block mb-1">Nome Completo *</label>
           <input
@@ -228,7 +228,7 @@ export function AuthPage({ setUser }) {
             alt="Gym background"
             className="w-full h-full object-cover opacity-70"
           />
-          <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+          <div className="absolute inset-0 flex flex-col items-center justify-end pb-10 p-6 text-center">
             <h1 className="text-white text-4xl font-black uppercase italic leading-tight">
               Transforme seu <span className="text-red-600">Corpo</span>
             </h1>
