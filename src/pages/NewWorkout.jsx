@@ -80,7 +80,7 @@ export function NewWorkoutPage({ setPage, workouts, setWorkouts }) {
     alert(`${nomeDoExercicio} adicionado com sucesso!`);
   }
 
-  // Salva o treino completo no sistema e volta para a Home
+
   function handleSalvarTreino() {
     if (nomeTreino === "") {
       alert("Dê um nome ao seu treino antes de salvar!");
